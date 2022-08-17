@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This is a test flow trying to configure if a record should be submitted via logic</description>
+        <internal_name>test_flow__booking_app</internal_name>
+        <label_cache>[{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Table","label":"1 - Look Up Records➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Records","label":"1 - Look Up Records➛Room Requests Records","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"19d06552-1922-43df-9634-640925cb4e52.record","label":"3 - Update Record➛Room Requests Record","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"19d06552-1922-43df-9634-640925cb4e52.table_name","label":"3 - Update Record➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"19d06552-1922-43df-9634-640925cb4e52.__action_status__","label":"3 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"19d06552-1922-43df-9634-640925cb4e52.__dont_treat_as_error__","label":"3 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Room Requests Record","reference":"x_852639_booking_room_requests","reference_display":"Room Requests","type":"reference","base_type":"reference","attributes":{}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.Records","label":"6 - Look Up Records➛Room Requests Records","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.Table","label":"6 - Look Up Records➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.__action_status__","label":"6 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.__dont_treat_as_error__","label":"6 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.meeting_start_time","label":"Trigger - Record Created➛Room Requests Record➛Meeting start time","reference":"","reference_display":"Meeting start time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_852639_booking_room_requests","column_name":"meeting_start_time"},{"name":"cefe5d16-e65c-4482-8151-2dc4ca3c400c.record","label":"8 - Update Record➛Room Requests Record","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cefe5d16-e65c-4482-8151-2dc4ca3c400c.table_name","label":"8 - Update Record➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cefe5d16-e65c-4482-8151-2dc4ca3c400c.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cefe5d16-e65c-4482-8151-2dc4ca3c400c.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Records","label":"11 - Look Up Records➛Room Requests Records","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Table","label":"11 - Look Up Records➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Count","label":"11 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.__action_status__","label":"11 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.__dont_treat_as_error__","label":"11 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.meeting_end_time","label":"Trigger - Record Created➛Room Requests Record➛Meeting end time","reference":"","reference_display":"Meeting end time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_852639_booking_room_requests","column_name":"meeting_end_time"},{"name":"ad55cb60-147f-4d2d-aada-dc403e474c3a.record","label":"13 - Update Record➛Room Requests Record","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad55cb60-147f-4d2d-aada-dc403e474c3a.table_name","label":"13 - Update Record➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad55cb60-147f-4d2d-aada-dc403e474c3a.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad55cb60-147f-4d2d-aada-dc403e474c3a.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.Records","label":"16 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.Table","label":"16 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.Count","label":"16 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.__action_status__","label":"16 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.__dont_treat_as_error__","label":"16 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Test flow - Booking App</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:29:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0d45732e9711111093f0fb200153af21</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Test flow - Booking App</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_0d45732e9711111093f0fb200153af21</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:12</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=0d45732e9711111093f0fb200153af21"/>
+    <sys_variable_value action="DELETE" query="document_key=0d45732e9711111093f0fb200153af21"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=0d45732e9711111093f0fb200153af21^sys_idNOT IN02883bee9711111093f0fb200153afdb"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:21</sys_created_on>
+        <sys_id>02883bee9711111093f0fb200153afdb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=02883bee9711111093f0fb200153afdb"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>02883bee9711111093f0fb200153afdb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:22</sys_created_on>
+        <sys_id>8a883bee9711111093f0fb200153afdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:43:22</sys_updated_on>
+        <value>x_852639_booking_room_requests</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>02883bee9711111093f0fb200153afdb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:22</sys_created_on>
+        <sys_id>c6883bee9711111093f0fb200153afdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:43:22</sys_updated_on>
+        <value>foreground</value>
+        <variable display_value="Run flow In">3f1b9e4e0f103300b599bca2ff767e21</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>02883bee9711111093f0fb200153afdb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:22</sys_created_on>
+        <sys_id>ce883bee9711111093f0fb200153afdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:43:22</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="DELETE" query="flow=0d45732e9711111093f0fb200153af21"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=0d45732e9711111093f0fb200153af21^sys_idNOT IN0945732e9711111093f0fb200153af22"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>0d45732e9711111093f0fb200153af21</id>
+        <name>Test flow - Booking App</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:29:05</sys_created_on>
+        <sys_id>0945732e9711111093f0fb200153af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:29:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=0945732e9711111093f0fb200153af22"/>
+    <sys_hub_flow_input action="DELETE" query="model=0d45732e9711111093f0fb200153af21^sys_idNOT IN06883bee9711111093f0fb200153afd6,42883bee9711111093f0fb200153afd2"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</model>
+        <model_id>0d45732e9711111093f0fb200153af21</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:21</sys_created_on>
+        <sys_id>06883bee9711111093f0fb200153afd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:43:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</model>
+        <model_id>0d45732e9711111093f0fb200153af21</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:21</sys_created_on>
+        <sys_id>42883bee9711111093f0fb200153afd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:43:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="DELETE" query="model=0d45732e9711111093f0fb200153af21"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=0d45732e9711111093f0fb200153af21"/>
+    <sys_hub_action_instance action="DELETE" query="flow=0d45732e9711111093f0fb200153af21^sys_idNOT IN114b7ba29751111093f0fb200153af72,3dee73a69751111093f0fb200153afa6,994b7ba29751111093f0fb200153af88,a5ee73a69751111093f0fb200153af9d,b1ee73a69751111093f0fb200153afb4,c6883bee9711111093f0fb200153afe3,dd4b7ba29751111093f0fb200153af7f"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <order>3</order>
+        <parent_ui_id>91686ad3-51c6-420f-b456-a0c800f5fc1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>114b7ba29751111093f0fb200153af72</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>19d06552-1922-43df-9634-640925cb4e52</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=114b7ba29751111093f0fb200153af72"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>114b7ba29751111093f0fb200153af72</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>914b7ba29751111093f0fb200153af74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <value>x_852639_booking_room_requests</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>114b7ba29751111093f0fb200153af72</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>dd4b7ba29751111093f0fb200153af73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <value>approval_state=pending_approval</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=114b7ba29751111093f0fb200153af72"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>114b7ba29751111093f0fb200153af72</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>994b7ba29751111093f0fb200153af73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>114b7ba29751111093f0fb200153af72</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>d54b7ba29751111093f0fb200153af73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>114b7ba29751111093f0fb200153af72</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>5d4b7ba29751111093f0fb200153af73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=114b7ba29751111093f0fb200153af72"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=114b7ba29751111093f0fb200153af72"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <order>13</order>
+        <parent_ui_id>9fc4b870-6eca-4036-baa4-b55a0e2311bc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>3dee73a69751111093f0fb200153afa6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>ad55cb60-147f-4d2d-aada-dc403e474c3a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=3dee73a69751111093f0fb200153afa6"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3dee73a69751111093f0fb200153afa6</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>39ee73a69751111093f0fb200153afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <value>x_852639_booking_room_requests</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3dee73a69751111093f0fb200153afa6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>75ee73a69751111093f0fb200153afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <value>approval_state=closed_incomplete</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=3dee73a69751111093f0fb200153afa6"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>3dee73a69751111093f0fb200153afa6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>31ee73a69751111093f0fb200153afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>3dee73a69751111093f0fb200153afa6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>7dee73a69751111093f0fb200153afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>3dee73a69751111093f0fb200153afa6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>f1ee73a69751111093f0fb200153afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=3dee73a69751111093f0fb200153afa6"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=3dee73a69751111093f0fb200153afa6"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>need to confiqure an alert message for the rejection of the request! (br/script/ui policy).</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <order>8</order>
+        <parent_ui_id>a1f0aae6-ecee-4e37-a2a2-c1cae11ba9d6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>994b7ba29751111093f0fb200153af88</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>cefe5d16-e65c-4482-8151-2dc4ca3c400c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=994b7ba29751111093f0fb200153af88"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>994b7ba29751111093f0fb200153af88</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>954b7ba29751111093f0fb200153af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <value>x_852639_booking_room_requests</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>994b7ba29751111093f0fb200153af88</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>d14b7ba29751111093f0fb200153af8a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:56:23</sys_updated_on>
+        <value>approval_state=closed_incomplete</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=994b7ba29751111093f0fb200153af88"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>994b7ba29751111093f0fb200153af88</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>9d4b7ba29751111093f0fb200153af89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>994b7ba29751111093f0fb200153af88</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>d94b7ba29751111093f0fb200153af89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>994b7ba29751111093f0fb200153af88</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>514b7ba29751111093f0fb200153af8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=994b7ba29751111093f0fb200153af88"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=994b7ba29751111093f0fb200153af88"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>need to confiq a script not allowing meeting duration &gt;2 hours and &lt;30min.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <order>11</order>
+        <parent_ui_id>8fb6f05e-84cd-46a7-af03-c502f4ec0c6d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>a5ee73a69751111093f0fb200153af9d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>3c3c6857-d2e0-4a7e-beb7-18500b6a1f38</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=a5ee73a69751111093f0fb200153af9d"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a5ee73a69751111093f0fb200153af9d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>25ee73a69751111093f0fb200153af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <value>x_852639_booking_room_requests</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=a5ee73a69751111093f0fb200153af9d"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>a5ee73a69751111093f0fb200153af9d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>edee73a69751111093f0fb200153af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>meeting_end_timeSAMEAS{{Created_1.current.meeting_end_time}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>a5ee73a69751111093f0fb200153af9d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>a1ee73a69751111093f0fb200153af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=a5ee73a69751111093f0fb200153af9d"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=a5ee73a69751111093f0fb200153af9d"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>This is not right, need to config.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <order>16</order>
+        <parent_ui_id>782a4e86-b900-4b97-a885-b305d4ffedc8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>b1ee73a69751111093f0fb200153afb4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>e060377c-5103-48df-b77f-62c968c3adf9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=b1ee73a69751111093f0fb200153afb4"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b1ee73a69751111093f0fb200153afb4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>3dee73a69751111093f0fb200153afb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <value>meeting_start_timeLESSTHANsys_created_on@hour@before@1</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b1ee73a69751111093f0fb200153afb4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>fdee73a69751111093f0fb200153afb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <value>x_852639_booking_room_requests</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=b1ee73a69751111093f0fb200153afb4"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=b1ee73a69751111093f0fb200153afb4"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=b1ee73a69751111093f0fb200153afb4"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:22</sys_created_on>
+        <sys_id>c6883bee9711111093f0fb200153afe3</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=c6883bee9711111093f0fb200153afe3"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6883bee9711111093f0fb200153afe3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:22</sys_created_on>
+        <sys_id>0e887bee9711111093f0fb200153af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:43:22</sys_updated_on>
+        <value>x_852639_booking_room_requests</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6883bee9711111093f0fb200153afe3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:22</sys_created_on>
+        <sys_id>4a887bee9711111093f0fb200153af24</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <value>approval_state=new^location=12498f862f7811101943808cf699b68a^ORlocation=72d9c7c62f7811101943808cf699b64d^ORlocation=1d3ac7c62f7811101943808cf699b626^ORlocation=af5acbc62f7811101943808cf699b620^ORlocation=802acbc62f7811101943808cf699b6a0</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=c6883bee9711111093f0fb200153afe3"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=c6883bee9711111093f0fb200153afe3"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=c6883bee9711111093f0fb200153afe3"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <order>6</order>
+        <parent_ui_id>c6598d73-b7ef-4e31-9d78-c391be0fd85f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>dd4b7ba29751111093f0fb200153af7f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>24aeebdb-c37d-46ef-a524-c300ad33c877</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=dd4b7ba29751111093f0fb200153af7f"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dd4b7ba29751111093f0fb200153af7f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>594b7ba29751111093f0fb200153af81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <value>x_852639_booking_room_requests</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=dd4b7ba29751111093f0fb200153af7f"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>dd4b7ba29751111093f0fb200153af7f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>154b7ba29751111093f0fb200153af81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>meeting_start_timeSAMEAS{{Created_1.current.meeting_start_time}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>dd4b7ba29751111093f0fb200153af7f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>d54b7ba29751111093f0fb200153af81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=dd4b7ba29751111093f0fb200153af7f"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=dd4b7ba29751111093f0fb200153af7f"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=0d45732e9711111093f0fb200153af21"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=0d45732e9711111093f0fb200153af21^sys_idNOT IN154b7ba29751111093f0fb200153af82,61ee73a69751111093f0fb200153af95,708bbfa29751111093f0fb200153afd8,7dee73a69751111093f0fb200153afab,994b7ba29751111093f0fb200153af77,a5ee73a69751111093f0fb200153afa0,ce887bee9711111093f0fb200153af25,dd4b7ba29751111093f0fb200153af74,f1ee73a69751111093f0fb200153afa9"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">5d4b7ba29751111093f0fb200153af81</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c6598d73-b7ef-4e31-9d78-c391be0fd85f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>154b7ba29751111093f0fb200153af82</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>a1f0aae6-ecee-4e37-a2a2-c1cae11ba9d6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=154b7ba29751111093f0fb200153af82"/>
+    <sys_element_mapping action="DELETE" query="id=154b7ba29751111093f0fb200153af82"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>154b7ba29751111093f0fb200153af82</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>5d4b7ba29751111093f0fb200153af84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{24aeebdb-c37d-46ef-a524-c300ad33c877.Count}}&gt;0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=154b7ba29751111093f0fb200153af82"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=154b7ba29751111093f0fb200153af82"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">a9ee73a69751111093f0fb200153af94</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c6598d73-b7ef-4e31-9d78-c391be0fd85f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>61ee73a69751111093f0fb200153af95</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>8fb6f05e-84cd-46a7-af03-c502f4ec0c6d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=61ee73a69751111093f0fb200153af95"/>
+    <sys_element_mapping action="DELETE" query="id=61ee73a69751111093f0fb200153af95"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>61ee73a69751111093f0fb200153af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>a9ee73a69751111093f0fb200153af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=61ee73a69751111093f0fb200153af95"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=61ee73a69751111093f0fb200153af95"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">b88bbfa29751111093f0fb200153afd7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a1f0aae6-ecee-4e37-a2a2-c1cae11ba9d6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:56:23</sys_created_on>
+        <sys_id>708bbfa29751111093f0fb200153afd8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>3d6b1095-1bd0-41c7-a06d-62a3bfb96264</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=708bbfa29751111093f0fb200153afd8"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=708bbfa29751111093f0fb200153afd8"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=708bbfa29751111093f0fb200153afd8"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">b5ee73a69751111093f0fb200153afab</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>8fb6f05e-84cd-46a7-af03-c502f4ec0c6d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>7dee73a69751111093f0fb200153afab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>782a4e86-b900-4b97-a885-b305d4ffedc8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=7dee73a69751111093f0fb200153afab"/>
+    <sys_element_mapping action="DELETE" query="id=7dee73a69751111093f0fb200153afab"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>7dee73a69751111093f0fb200153afab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>b5ee73a69751111093f0fb200153afae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=7dee73a69751111093f0fb200153afab"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=7dee73a69751111093f0fb200153afab"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">d14b7ba29751111093f0fb200153af77</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>994b7ba29751111093f0fb200153af77</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>c6598d73-b7ef-4e31-9d78-c391be0fd85f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=994b7ba29751111093f0fb200153af77"/>
+    <sys_element_mapping action="DELETE" query="id=994b7ba29751111093f0fb200153af77"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>994b7ba29751111093f0fb200153af77</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>d14b7ba29751111093f0fb200153af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:55:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Count}}&gt;0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=994b7ba29751111093f0fb200153af77"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=994b7ba29751111093f0fb200153af77"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">edee73a69751111093f0fb200153af9f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>8fb6f05e-84cd-46a7-af03-c502f4ec0c6d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>a5ee73a69751111093f0fb200153afa0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>9fc4b870-6eca-4036-baa4-b55a0e2311bc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=a5ee73a69751111093f0fb200153afa0"/>
+    <sys_element_mapping action="DELETE" query="id=a5ee73a69751111093f0fb200153afa0"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>a5ee73a69751111093f0fb200153afa0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>edee73a69751111093f0fb200153afa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Count}}&gt;0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=a5ee73a69751111093f0fb200153afa0"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=a5ee73a69751111093f0fb200153afa0"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">82887bee9711111093f0fb200153af25</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:22</sys_created_on>
+        <sys_id>ce887bee9711111093f0fb200153af25</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>91686ad3-51c6-420f-b456-a0c800f5fc1f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=ce887bee9711111093f0fb200153af25"/>
+    <sys_element_mapping action="DELETE" query="id=ce887bee9711111093f0fb200153af25"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>ce887bee9711111093f0fb200153af25</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:22</sys_created_on>
+        <sys_id>02887bee9711111093f0fb200153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:43:22</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=ce887bee9711111093f0fb200153af25"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=ce887bee9711111093f0fb200153af25"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">194b7ba29751111093f0fb200153af74</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>91686ad3-51c6-420f-b456-a0c800f5fc1f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:55:19</sys_created_on>
+        <sys_id>dd4b7ba29751111093f0fb200153af74</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>0561be14-9050-4ae7-b485-b00bef28bc6c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=dd4b7ba29751111093f0fb200153af74"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=dd4b7ba29751111093f0fb200153af74"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=dd4b7ba29751111093f0fb200153af74"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">3dee73a69751111093f0fb200153afa8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Test flow - Booking App">0d45732e9711111093f0fb200153af21</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9fc4b870-6eca-4036-baa4-b55a0e2311bc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:11</sys_created_on>
+        <sys_id>f1ee73a69751111093f0fb200153afa9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:11</sys_updated_on>
+        <ui_id>de6c5e79-0389-40b4-b31e-1154a942f503</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=f1ee73a69751111093f0fb200153afa9"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=f1ee73a69751111093f0fb200153afa9"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=f1ee73a69751111093f0fb200153afa9"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=0d45732e9711111093f0fb200153af21"/>
+    <sys_hub_flow_variable action="DELETE" query="model=0d45732e9711111093f0fb200153af21"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21^sys_idNOT IN46883bee9711111093f0fb200153afd5,4e883bee9711111093f0fb200153afd8"/>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:21</sys_created_on>
+        <sys_id>46883bee9711111093f0fb200153afd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:43:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 07:43:21</sys_created_on>
+        <sys_id>4e883bee9711111093f0fb200153afd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 07:43:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_0d45732e9711111093f0fb200153af21"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_0d45732e9711111093f0fb200153af21"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=0d45732e9711111093f0fb200153af21"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=0d45732e9711111093f0fb200153af21"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>dfb6f257db097b00387021c4059619c7</instance_id>
+        <instance_name>dev84784</instance_name>
+        <name>sys_hub_flow_0d45732e9711111093f0fb200153af21</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;This is a test flow trying to configure if a record should be submitted via logic&lt;/description&gt;&lt;internal_name&gt;test_flow__booking_app&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Table","label":"1 - Look Up Records➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Records","label":"1 - Look Up Records➛Room Requests Records","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"19d06552-1922-43df-9634-640925cb4e52.record","label":"3 - Update Record➛Room Requests Record","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"19d06552-1922-43df-9634-640925cb4e52.table_name","label":"3 - Update Record➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"19d06552-1922-43df-9634-640925cb4e52.__action_status__","label":"3 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"19d06552-1922-43df-9634-640925cb4e52.__dont_treat_as_error__","label":"3 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Room Requests Record","reference":"x_852639_booking_room_requests","reference_display":"Room Requests","type":"reference","base_type":"reference","attributes":{}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.Records","label":"6 - Look Up Records➛Room Requests Records","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.Table","label":"6 - Look Up Records➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.__action_status__","label":"6 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24aeebdb-c37d-46ef-a524-c300ad33c877.__dont_treat_as_error__","label":"6 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.meeting_start_time","label":"Trigger - Record Created➛Room Requests Record➛Meeting start time","reference":"","reference_display":"Meeting start time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_852639_booking_room_requests","column_name":"meeting_start_time"},{"name":"cefe5d16-e65c-4482-8151-2dc4ca3c400c.record","label":"8 - Update Record➛Room Requests Record","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cefe5d16-e65c-4482-8151-2dc4ca3c400c.table_name","label":"8 - Update Record➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cefe5d16-e65c-4482-8151-2dc4ca3c400c.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cefe5d16-e65c-4482-8151-2dc4ca3c400c.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Records","label":"11 - Look Up Records➛Room Requests Records","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Table","label":"11 - Look Up Records➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Count","label":"11 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.__action_status__","label":"11 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.__dont_treat_as_error__","label":"11 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.meeting_end_time","label":"Trigger - Record Created➛Room Requests Record➛Meeting end time","reference":"","reference_display":"Meeting end time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_852639_booking_room_requests","column_name":"meeting_end_time"},{"name":"ad55cb60-147f-4d2d-aada-dc403e474c3a.record","label":"13 - Update Record➛Room Requests Record","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad55cb60-147f-4d2d-aada-dc403e474c3a.table_name","label":"13 - Update Record➛Room Requests Table","reference":"x_852639_booking_room_requests","reference_display":"Room Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad55cb60-147f-4d2d-aada-dc403e474c3a.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad55cb60-147f-4d2d-aada-dc403e474c3a.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.Records","label":"16 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.Table","label":"16 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.Count","label":"16 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.__action_status__","label":"16 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"e060377c-5103-48df-b77f-62c968c3adf9.__dont_treat_as_error__","label":"16 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Test flow - Booking App&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:29:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0d45732e9711111093f0fb200153af21&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test flow - Booking App&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_0d45732e9711111093f0fb200153af21&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:12&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=0d45732e9711111093f0fb200153af21^sys_idNOT IN02883bee9711111093f0fb200153afdb"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;name&gt;Created&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:21&lt;/sys_created_on&gt;&lt;sys_id&gt;02883bee9711111093f0fb200153afdb&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created"&gt;798916a0c31322002841b63b12d3ae7c&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=02883bee9711111093f0fb200153afdb"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;02883bee9711111093f0fb200153afdb&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:22&lt;/sys_created_on&gt;&lt;sys_id&gt;8a883bee9711111093f0fb200153afdc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:43:22&lt;/sys_updated_on&gt;&lt;value&gt;x_852639_booking_room_requests&lt;/value&gt;&lt;variable display_value="Table"&gt;cfca92e0c31322002841b63b12d3ae00&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;02883bee9711111093f0fb200153afdb&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:22&lt;/sys_created_on&gt;&lt;sys_id&gt;c6883bee9711111093f0fb200153afdc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:43:22&lt;/sys_updated_on&gt;&lt;value&gt;foreground&lt;/value&gt;&lt;variable display_value="Run flow In"&gt;3f1b9e4e0f103300b599bca2ff767e21&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;02883bee9711111093f0fb200153afdb&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:22&lt;/sys_created_on&gt;&lt;sys_id&gt;ce883bee9711111093f0fb200153afdb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:43:22&lt;/sys_updated_on&gt;&lt;value&gt;^EQ&lt;/value&gt;&lt;variable display_value="Condition"&gt;66aadea0c31322002841b63b12d3aebf&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=0d45732e9711111093f0fb200153af21^sys_idNOT IN0945732e9711111093f0fb200153af22"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;0d45732e9711111093f0fb200153af21&lt;/id&gt;&lt;name&gt;Test flow - Booking App&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:29:05&lt;/sys_created_on&gt;&lt;sys_id&gt;0945732e9711111093f0fb200153af22&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:29:05&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0945732e9711111093f0fb200153af22"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=0d45732e9711111093f0fb200153af21^sys_idNOT IN06883bee9711111093f0fb200153afd6,42883bee9711111093f0fb200153afd2"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/model&gt;&lt;model_id&gt;0d45732e9711111093f0fb200153af21&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:21&lt;/sys_created_on&gt;&lt;sys_id&gt;06883bee9711111093f0fb200153afd6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:43:21&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/model&gt;&lt;model_id&gt;0d45732e9711111093f0fb200153af21&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:21&lt;/sys_created_on&gt;&lt;sys_id&gt;42883bee9711111093f0fb200153afd2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:43:21&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=0d45732e9711111093f0fb200153af21^sys_idNOT IN114b7ba29751111093f0fb200153af72,3dee73a69751111093f0fb200153afa6,994b7ba29751111093f0fb200153af88,a5ee73a69751111093f0fb200153af9d,b1ee73a69751111093f0fb200153afb4,c6883bee9711111093f0fb200153afe3,dd4b7ba29751111093f0fb200153af7f"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;91686ad3-51c6-420f-b456-a0c800f5fc1f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;114b7ba29751111093f0fb200153af72&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;19d06552-1922-43df-9634-640925cb4e52&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=114b7ba29751111093f0fb200153af72"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;114b7ba29751111093f0fb200153af72&lt;/document_key&gt;&lt;order&gt;50&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;914b7ba29751111093f0fb200153af74&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;value&gt;x_852639_booking_room_requests&lt;/value&gt;&lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;114b7ba29751111093f0fb200153af72&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;dd4b7ba29751111093f0fb200153af73&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;value&gt;approval_state=pending_approval&lt;/value&gt;&lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=114b7ba29751111093f0fb200153af72"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;114b7ba29751111093f0fb200153af72&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;994b7ba29751111093f0fb200153af73&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;{{Created_1.current}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;114b7ba29751111093f0fb200153af72&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;d54b7ba29751111093f0fb200153af73&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;114b7ba29751111093f0fb200153af72&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;5d4b7ba29751111093f0fb200153af73&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=114b7ba29751111093f0fb200153af72"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=114b7ba29751111093f0fb200153af72"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;order&gt;13&lt;/order&gt;&lt;parent_ui_id&gt;9fc4b870-6eca-4036-baa4-b55a0e2311bc&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;3dee73a69751111093f0fb200153afa6&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;ad55cb60-147f-4d2d-aada-dc403e474c3a&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=3dee73a69751111093f0fb200153afa6"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;3dee73a69751111093f0fb200153afa6&lt;/document_key&gt;&lt;order&gt;50&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;39ee73a69751111093f0fb200153afa8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;value&gt;x_852639_booking_room_requests&lt;/value&gt;&lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;3dee73a69751111093f0fb200153afa6&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;75ee73a69751111093f0fb200153afa8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;value&gt;approval_state=closed_incomplete&lt;/value&gt;&lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=3dee73a69751111093f0fb200153afa6"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;3dee73a69751111093f0fb200153afa6&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;31ee73a69751111093f0fb200153afa8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;{{Created_1.current}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;3dee73a69751111093f0fb200153afa6&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;7dee73a69751111093f0fb200153afa7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;3dee73a69751111093f0fb200153afa6&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;f1ee73a69751111093f0fb200153afa8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=3dee73a69751111093f0fb200153afa6"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=3dee73a69751111093f0fb200153afa6"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment&gt;need to confiqure an alert message for the rejection of the request! (br/script/ui policy).&lt;/comment&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;order&gt;8&lt;/order&gt;&lt;parent_ui_id&gt;a1f0aae6-ecee-4e37-a2a2-c1cae11ba9d6&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;994b7ba29751111093f0fb200153af88&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;cefe5d16-e65c-4482-8151-2dc4ca3c400c&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=994b7ba29751111093f0fb200153af88"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;994b7ba29751111093f0fb200153af88&lt;/document_key&gt;&lt;order&gt;50&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;954b7ba29751111093f0fb200153af8a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;value&gt;x_852639_booking_room_requests&lt;/value&gt;&lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;994b7ba29751111093f0fb200153af88&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;d14b7ba29751111093f0fb200153af8a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:56:23&lt;/sys_updated_on&gt;&lt;value&gt;approval_state=closed_incomplete&lt;/value&gt;&lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=994b7ba29751111093f0fb200153af88"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;994b7ba29751111093f0fb200153af88&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;9d4b7ba29751111093f0fb200153af89&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;{{Created_1.current}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;994b7ba29751111093f0fb200153af88&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;d94b7ba29751111093f0fb200153af89&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;994b7ba29751111093f0fb200153af88&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;514b7ba29751111093f0fb200153af8a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=994b7ba29751111093f0fb200153af88"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=994b7ba29751111093f0fb200153af88"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment&gt;need to confiq a script not allowing meeting duration &amp;gt;2 hours and &amp;lt;30min.&lt;/comment&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;order&gt;11&lt;/order&gt;&lt;parent_ui_id&gt;8fb6f05e-84cd-46a7-af03-c502f4ec0c6d&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;a5ee73a69751111093f0fb200153af9d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;3c3c6857-d2e0-4a7e-beb7-18500b6a1f38&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a5ee73a69751111093f0fb200153af9d"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;a5ee73a69751111093f0fb200153af9d&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;25ee73a69751111093f0fb200153af9f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;value&gt;x_852639_booking_room_requests&lt;/value&gt;&lt;variable display_value="Table"&gt;8f400a1587003300663ca1bb36cb0b4b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=a5ee73a69751111093f0fb200153af9d"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;a5ee73a69751111093f0fb200153af9d&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;edee73a69751111093f0fb200153af9e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;meeting_end_timeSAMEAS{{Created_1.current.meeting_end_time}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table&lt;/field&gt;&lt;id&gt;a5ee73a69751111093f0fb200153af9d&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;a1ee73a69751111093f0fb200153af9f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=a5ee73a69751111093f0fb200153af9d"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=a5ee73a69751111093f0fb200153af9d"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment&gt;This is not right, need to config.&lt;/comment&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;order&gt;16&lt;/order&gt;&lt;parent_ui_id&gt;782a4e86-b900-4b97-a885-b305d4ffedc8&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;b1ee73a69751111093f0fb200153afb4&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;e060377c-5103-48df-b77f-62c968c3adf9&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=b1ee73a69751111093f0fb200153afb4"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;b1ee73a69751111093f0fb200153afb4&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;3dee73a69751111093f0fb200153afb5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;value&gt;meeting_start_timeLESSTHANsys_created_on@hour@before@1&lt;/value&gt;&lt;variable display_value="Conditions"&gt;8f400a1587003300663ca1bb36cb0b50&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;b1ee73a69751111093f0fb200153afb4&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;fdee73a69751111093f0fb200153afb5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;value&gt;x_852639_booking_room_requests&lt;/value&gt;&lt;variable display_value="Table"&gt;8f400a1587003300663ca1bb36cb0b4b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=b1ee73a69751111093f0fb200153afb4"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=b1ee73a69751111093f0fb200153afb4"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=b1ee73a69751111093f0fb200153afb4"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:22&lt;/sys_created_on&gt;&lt;sys_id&gt;c6883bee9711111093f0fb200153afe3&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=c6883bee9711111093f0fb200153afe3"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;c6883bee9711111093f0fb200153afe3&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:22&lt;/sys_created_on&gt;&lt;sys_id&gt;0e887bee9711111093f0fb200153af24&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:43:22&lt;/sys_updated_on&gt;&lt;value&gt;x_852639_booking_room_requests&lt;/value&gt;&lt;variable display_value="Table"&gt;8f400a1587003300663ca1bb36cb0b4b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;c6883bee9711111093f0fb200153afe3&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:22&lt;/sys_created_on&gt;&lt;sys_id&gt;4a887bee9711111093f0fb200153af24&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;value&gt;approval_state=new^location=12498f862f7811101943808cf699b68a^ORlocation=72d9c7c62f7811101943808cf699b64d^ORlocation=1d3ac7c62f7811101943808cf699b626^ORlocation=af5acbc62f7811101943808cf699b620^ORlocation=802acbc62f7811101943808cf699b6a0&lt;/value&gt;&lt;variable display_value="Conditions"&gt;8f400a1587003300663ca1bb36cb0b50&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=c6883bee9711111093f0fb200153afe3"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=c6883bee9711111093f0fb200153afe3"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=c6883bee9711111093f0fb200153afe3"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;c6598d73-b7ef-4e31-9d78-c391be0fd85f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;dd4b7ba29751111093f0fb200153af7f&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;24aeebdb-c37d-46ef-a524-c300ad33c877&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=dd4b7ba29751111093f0fb200153af7f"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;dd4b7ba29751111093f0fb200153af7f&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;594b7ba29751111093f0fb200153af81&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;value&gt;x_852639_booking_room_requests&lt;/value&gt;&lt;variable display_value="Table"&gt;8f400a1587003300663ca1bb36cb0b4b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=dd4b7ba29751111093f0fb200153af7f"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;dd4b7ba29751111093f0fb200153af7f&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;154b7ba29751111093f0fb200153af81&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;meeting_start_timeSAMEAS{{Created_1.current.meeting_start_time}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table&lt;/field&gt;&lt;id&gt;dd4b7ba29751111093f0fb200153af7f&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;d54b7ba29751111093f0fb200153af81&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=dd4b7ba29751111093f0fb200153af7f"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=dd4b7ba29751111093f0fb200153af7f"/&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=0d45732e9711111093f0fb200153af21^sys_idNOT IN154b7ba29751111093f0fb200153af82,61ee73a69751111093f0fb200153af95,708bbfa29751111093f0fb200153afd8,7dee73a69751111093f0fb200153afab,994b7ba29751111093f0fb200153af77,a5ee73a69751111093f0fb200153afa0,ce887bee9711111093f0fb200153af25,dd4b7ba29751111093f0fb200153af74,f1ee73a69751111093f0fb200153afa9"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;5d4b7ba29751111093f0fb200153af81&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;7&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;c6598d73-b7ef-4e31-9d78-c391be0fd85f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;154b7ba29751111093f0fb200153af82&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;a1f0aae6-ecee-4e37-a2a2-c1cae11ba9d6&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=154b7ba29751111093f0fb200153af82"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=154b7ba29751111093f0fb200153af82"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;154b7ba29751111093f0fb200153af82&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;5d4b7ba29751111093f0fb200153af84&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{24aeebdb-c37d-46ef-a524-c300ad33c877.Count}}&amp;gt;0&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=154b7ba29751111093f0fb200153af82"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=154b7ba29751111093f0fb200153af82"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;a9ee73a69751111093f0fb200153af94&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;10&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;c6598d73-b7ef-4e31-9d78-c391be0fd85f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;61ee73a69751111093f0fb200153af95&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;8fb6f05e-84cd-46a7-af03-c502f4ec0c6d&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=61ee73a69751111093f0fb200153af95"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=61ee73a69751111093f0fb200153af95"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;61ee73a69751111093f0fb200153af95&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;a9ee73a69751111093f0fb200153af97&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Count}}=0&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=61ee73a69751111093f0fb200153af95"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=61ee73a69751111093f0fb200153af95"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;b88bbfa29751111093f0fb200153afd7&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;9&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;a1f0aae6-ecee-4e37-a2a2-c1cae11ba9d6&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:56:23&lt;/sys_created_on&gt;&lt;sys_id&gt;708bbfa29751111093f0fb200153afd8&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;3d6b1095-1bd0-41c7-a06d-62a3bfb96264&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=708bbfa29751111093f0fb200153afd8"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=708bbfa29751111093f0fb200153afd8"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=708bbfa29751111093f0fb200153afd8"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;b5ee73a69751111093f0fb200153afab&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;15&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;8fb6f05e-84cd-46a7-af03-c502f4ec0c6d&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;7dee73a69751111093f0fb200153afab&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;782a4e86-b900-4b97-a885-b305d4ffedc8&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=7dee73a69751111093f0fb200153afab"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=7dee73a69751111093f0fb200153afab"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;7dee73a69751111093f0fb200153afab&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;b5ee73a69751111093f0fb200153afae&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Count}}=0&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7dee73a69751111093f0fb200153afab"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=7dee73a69751111093f0fb200153afab"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;d14b7ba29751111093f0fb200153af77&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;994b7ba29751111093f0fb200153af77&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;c6598d73-b7ef-4e31-9d78-c391be0fd85f&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=994b7ba29751111093f0fb200153af77"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=994b7ba29751111093f0fb200153af77"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;994b7ba29751111093f0fb200153af77&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;d14b7ba29751111093f0fb200153af7a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:55:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Count}}&amp;gt;0&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=994b7ba29751111093f0fb200153af77"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=994b7ba29751111093f0fb200153af77"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;edee73a69751111093f0fb200153af9f&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;12&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;8fb6f05e-84cd-46a7-af03-c502f4ec0c6d&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;a5ee73a69751111093f0fb200153afa0&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;9fc4b870-6eca-4036-baa4-b55a0e2311bc&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a5ee73a69751111093f0fb200153afa0"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=a5ee73a69751111093f0fb200153afa0"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;a5ee73a69751111093f0fb200153afa0&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;edee73a69751111093f0fb200153afa2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{3c3c6857-d2e0-4a7e-beb7-18500b6a1f38.Count}}&amp;gt;0&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a5ee73a69751111093f0fb200153afa0"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=a5ee73a69751111093f0fb200153afa0"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;82887bee9711111093f0fb200153af25&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:22&lt;/sys_created_on&gt;&lt;sys_id&gt;ce887bee9711111093f0fb200153af25&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;91686ad3-51c6-420f-b456-a0c800f5fc1f&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=ce887bee9711111093f0fb200153af25"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=ce887bee9711111093f0fb200153af25"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;ce887bee9711111093f0fb200153af25&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:22&lt;/sys_created_on&gt;&lt;sys_id&gt;02887bee9711111093f0fb200153af2a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:43:22&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{d1fa8bb5-3ca9-4937-aac0-a0ccf34c03f5.Count}}=0&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ce887bee9711111093f0fb200153af25"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=ce887bee9711111093f0fb200153af25"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;194b7ba29751111093f0fb200153af74&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;91686ad3-51c6-420f-b456-a0c800f5fc1f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:55:19&lt;/sys_created_on&gt;&lt;sys_id&gt;dd4b7ba29751111093f0fb200153af74&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;0561be14-9050-4ae7-b485-b00bef28bc6c&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=dd4b7ba29751111093f0fb200153af74"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=dd4b7ba29751111093f0fb200153af74"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=dd4b7ba29751111093f0fb200153af74"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;3dee73a69751111093f0fb200153afa8&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Test flow - Booking App"&gt;0d45732e9711111093f0fb200153af21&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;14&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;9fc4b870-6eca-4036-baa4-b55a0e2311bc&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 08:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;f1ee73a69751111093f0fb200153afa9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 08:11:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;de6c5e79-0389-40b4-b31e-1154a942f503&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f1ee73a69751111093f0fb200153afa9"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f1ee73a69751111093f0fb200153afa9"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=f1ee73a69751111093f0fb200153afa9"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21^sys_idNOT IN46883bee9711111093f0fb200153afd5,4e883bee9711111093f0fb200153afd8"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:21&lt;/sys_created_on&gt;&lt;sys_id&gt;46883bee9711111093f0fb200153afd5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:43:21&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-17 07:43:21&lt;/sys_created_on&gt;&lt;sys_id&gt;4e883bee9711111093f0fb200153afd8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-17 07:43:21&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=0d45732e9711111093f0fb200153af21"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=0d45732e9711111093f0fb200153af21"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1515313297</payload_hash>
+        <record_name>Test flow - Booking App</record_name>
+        <reverted_from/>
+        <source>97beb09c97d5d11093f0fb200153afbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 08:11:12</sys_created_on>
+        <sys_id>02eeb3a69751111093f0fb200153af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182aadb445b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 08:11:12</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>0aee73a6e051111080ae36c20e3e3cff</update_guid>
+        <update_guid_history>0aee73a6e051111080ae36c20e3e3cff:-1515313297,708bffa279511110b0bf2ff4ef685b22:-1496850419,d94b7ba22f511110100fa653f02e93c2:-1192837439,da887beedd11111091a4b39234d8ac5c:-22815960,0545732e1a111110b221c2d10af4b629:-98350427</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 11:13:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>3f664c514a26425cbac971fae5d865a4</sys_id>
+        <sys_metadata>0d45732e9711111093f0fb200153af21</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test flow - Booking App</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_0d45732e9711111093f0fb200153af21</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_0d45732e9711111093f0fb200153af21">02eeb3a69751111093f0fb200153af00</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 11:13:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
